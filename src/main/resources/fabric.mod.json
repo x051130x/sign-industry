@@ -14,9 +14,6 @@
   "icon": "assets/signindustry/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "io.github.x051130x.signindustry.client.SignindustryClient"
-    ],
     "main": [
       "io.github.x051130x.signindustry.Signindustry"
     ]

@@ -8,17 +8,24 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Signindustry implements ModInitializer {
     //block实例
     public static final Block PILLAR = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
     public static final Block SIGNCIRCLENOTALLOW = new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f));
 
+    public static final String MODID = "signindustry";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
+
     @Override
     public void onInitialize() {
-        Registry.register(Registry.BLOCK, new Identifier("signindustry", "pillar"), PILLAR);
-        Registry.register(Registry.ITEM, new Identifier("signindustry", "pillar"), new BlockItem(PILLAR, new FabricItemSettings()));
-        Registry.register(Registry.BLOCK, new Identifier("signindustry", "pillar"), SIGNCIRCLENOTALLOW);
-        Registry.register(Registry.ITEM, new Identifier("signindustry", "signcirclenotallow"), new BlockItem(SIGNCIRCLENOTALLOW, new FabricItemSettings()));
+        LOGGER.info("Hello SignIndustry!");
+
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "pillar"), PILLAR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "pillar"), new BlockItem(PILLAR, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signcirclenotallow"), SIGNCIRCLENOTALLOW);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signcirclenotallow"), new BlockItem(SIGNCIRCLENOTALLOW, new FabricItemSettings()));
     }
 }
