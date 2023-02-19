@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "signindustry",
+  "version": "${version}",
+  "name": "Signindustry",
+  "description": "A mod that add some real signs / 一个添加了些真实存在的标牌的mod",
+  "authors": [
+    "THYuyuko_051130"
+  ],
+  "contact": {
+    "repo": "https://github.com/x051130x/sign-industry"
+  },
+  "license": "MIT",
+  "icon": "assets/signindustry/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.x051130x.signindustry.client.SignindustryClient"
+    ],
+    "main": [
+      "io.github.x051130x.signindustry.Signindustry"
+    ]
+  },
+  "mixins": [
+    "signindustry.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
