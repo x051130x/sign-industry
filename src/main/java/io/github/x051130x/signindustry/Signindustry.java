@@ -15,6 +15,7 @@ public class Signindustry implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
     public static final signstatic PILLAR = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
     public static final signstatic SIGNCIRCLENOTALLOW = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNORDERFWD = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
     @Override
     public void onInitialize() {
         LOGGER.info("Hello SignIndustry!");
@@ -23,5 +24,7 @@ public class Signindustry implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "pillar"), new BlockItem(PILLAR, new FabricItemSettings()));
         Registry.register(Registry.BLOCK, new Identifier(MODID, "signcirclenotallow"), SIGNCIRCLENOTALLOW);
         Registry.register(Registry.ITEM, new Identifier(MODID, "signcirclenotallow"), new BlockItem(SIGNCIRCLENOTALLOW, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signorderfwd"), SIGNORDERFWD);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signorderfwd"), new BlockItem(SIGNORDERFWD, new FabricItemSettings()));
     }
 }
