@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "signindustry:block/signnocar", "uvlock": true },
+		"facing=east":  { "model": "signindustry:block/signnocar", "y":  90, "uvlock": true },
+		"facing=south": { "model": "signindustry:block/signnocar", "y": 180, "uvlock": true },
+		"facing=west":  { "model": "signindustry:block/signnocar", "y": 270, "uvlock": true }
+	}
+}

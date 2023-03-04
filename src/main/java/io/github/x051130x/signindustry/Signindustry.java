@@ -27,6 +27,23 @@ public class Signindustry implements ModInitializer {
     public static final signstatic SECONDARYSIGNCAR = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
     public static final signstatic SIGNSTOP = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
     public static final signstatic SIGNCROSSFIRST = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOCAR = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOHOUSE = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOLARGEBUS = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOMAN = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOMANCAR = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOMANTHREE = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOMOCAR = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOMOTO = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOMOTOBIKE = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOSMALLCAR = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOTHREE = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOTHREECAR = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOTHREECAR2 = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOTRACTOR = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOTRAILER = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOTRUCK = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
+    public static final signstatic SIGNNOWHISTLE = new signstatic(FabricBlockSettings.of(Material.METAL).strength(4.0f));
     @Override
     public void onInitialize() {
         LOGGER.info("Hello SignIndustry!");
@@ -55,5 +72,39 @@ public class Signindustry implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MODID, "signstop"), new BlockItem(SIGNSTOP, new FabricItemSettings()));
         Registry.register(Registry.BLOCK, new Identifier(MODID, "signcrossfirst"), SIGNCROSSFIRST);
         Registry.register(Registry.ITEM, new Identifier(MODID, "signcrossfirst"), new BlockItem(SIGNCROSSFIRST, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnocar"), SIGNNOCAR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnocar"), new BlockItem(SIGNNOCAR, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnohouse"), SIGNNOHOUSE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnohouse"), new BlockItem(SIGNNOHOUSE, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnolargebus"), SIGNNOLARGEBUS);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnolargebus"), new BlockItem(SIGNNOLARGEBUS, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnoman"), SIGNNOMAN);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnoman"), new BlockItem(SIGNNOMAN, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnomancar"), SIGNNOMANCAR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnomancar"), new BlockItem(SIGNNOMANCAR, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnomanthree"), SIGNNOMANTHREE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnomanthree"), new BlockItem(SIGNNOMANTHREE, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnomocar"), SIGNNOMOCAR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnomocar"), new BlockItem(SIGNNOMOCAR, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnomoto"), SIGNNOMOTO);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnomoto"), new BlockItem(SIGNNOMOTO, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnomotobike"), SIGNNOMOTOBIKE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnomotobike"), new BlockItem(SIGNNOMOTOBIKE, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnosmallcar"), SIGNNOSMALLCAR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnosmallcar"), new BlockItem(SIGNNOSMALLCAR, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnothree"), SIGNNOTHREE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnothree"), new BlockItem(SIGNNOTHREE, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnothreecar"), SIGNNOTHREECAR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnothreecar"), new BlockItem(SIGNNOTHREECAR, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnothreecar2"), SIGNNOTHREECAR2);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnothreecar2"), new BlockItem(SIGNNOTHREECAR2, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnotractor"), SIGNNOTRACTOR);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnotractor"), new BlockItem(SIGNNOTRACTOR, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnotrailer"), SIGNNOTRAILER);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnotrailer"), new BlockItem(SIGNNOTRAILER, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnotruck"), SIGNNOTRUCK);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnotruck"), new BlockItem(SIGNNOTRUCK, new FabricItemSettings()));
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "signnowhistle"), SIGNNOWHISTLE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "signnowhistle"), new BlockItem(SIGNNOWHISTLE, new FabricItemSettings()));
     }
 }

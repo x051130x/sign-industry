@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "signindustry:block/signnowhistle", "uvlock": true },
+		"facing=east":  { "model": "signindustry:block/signnowhistle", "y":  90, "uvlock": true },
+		"facing=south": { "model": "signindustry:block/signnowhistle", "y": 180, "uvlock": true },
+		"facing=west":  { "model": "signindustry:block/signnowhistle", "y": 270, "uvlock": true }
+	}
+}
